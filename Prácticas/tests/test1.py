@@ -13,6 +13,7 @@ Repositorio web:
     
 Computación Avanzada, Física UAM.
 '''
+
 import math
 
 g = 9.81
