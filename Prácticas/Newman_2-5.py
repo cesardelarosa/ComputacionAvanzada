@@ -15,13 +15,16 @@ Computación Avanzada, Física UAM.
 
 from math import sqrt
 
-m = 9.11e-31    # kg
-E = 10          # eV
-V = 9           # eV
-hbarra = 1.054  # J*s
+m = 9.11e-31        # kg
+E = 10              # eV
+V = 9               # eV
 
-k1 = sqrt(2 * m * E) / hbarra
-k2 = sqrt(2 * m * (E - V)) / hbarra
+
+k1 = sqrt(2 * m * E)
+k2 = sqrt(2 * m * (E - V))
+
+# No ha hecho falta introducir h-barra ya que en las ecuaciones de T y K
+# se cancela su valor al dividirse por si mismo
 
 T = 4 * k1 * k2 / (k1 + k2)**2
 K = ((k1 - k2) / (k1 + k2))**2

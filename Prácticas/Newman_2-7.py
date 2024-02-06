@@ -13,9 +13,8 @@ Repositorio web:
 Computación Avanzada, Física UAM.
 '''
 
-i = 0
-n = 1
-while (n < 1e9):
-    print(n)
-    n=(4*i+2)/(i+2)*n
-    i = i + 1
+i, n = 0, 1
+while (n <= 1e9):
+    print(int(n))
+    n *= (4 * i + 2) / (i + 2)
+    i += 1
