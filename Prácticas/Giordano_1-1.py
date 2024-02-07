@@ -21,7 +21,7 @@ t = 0
 v = 0
 
 print("Tiempo (s) \t Velocidad Euler (m/s) \t Velocidad Analítica (m/s)")
-while t < t_max:
+while t <= t_max:
     v_analitica = -g * t
     print(f"{t:.3f} \t\t {v:.3f} \t\t {v_analitica:.3f}")
     v -= g * h
